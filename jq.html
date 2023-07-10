@@ -1,0 +1,62 @@
+<html>
+    <!DOCTYPE html>
+  
+<head>
+    <title>
+        How to check a checkbox with jQuery?
+    </title>
+  
+    <script src=
+"https://code.jquery.com/jquery-2.2.4.min.js">
+    </script>
+</head>
+  
+<body>
+    <center>
+  
+        <b> 
+          jQuery Check/Uncheck Checkbox
+        </b>
+  
+        <p>
+            <input type="checkbox" name="option" id="front"> 
+            Front-End
+  
+            <input type="checkbox" name="option" id="back">
+            Back-End
+        </p>
+  
+        <p>
+            <button type="button" class="check-front">
+                Subscribe Front-End
+            </button>
+  
+            <button type="button" class="check-back">
+                Subscribe Back-End
+            </button>
+  
+            <button type="button" class="reset">
+                Reset 
+            </button>
+        </p>
+  
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".check-front").click(function() {
+                    $("#front").prop("checked", true);
+                });
+                $(".check-back").click(function() {
+                    $("#back").prop("checked", true);
+                });
+                $(".reset").click(function() {
+                    $("#front").prop("checked", false);
+                    $("#back").prop("checked", false);
+                });
+  
+            });
+        </script>
+    </center>
+</body>
+  
+</html>
+</html>
